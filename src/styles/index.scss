@@ -1,4 +1,39 @@
-body {
-  margin: 0;
-  padding: 0;
+$bgc: rgba(211, 211, 211, 0.808);
+$is-info: #3273dc;
+
+html {
+  background: $bgc;
+}
+
+// Code for centering form vertically
+// { ... }
+
+.card {
+
+  .content {
+    padding: 15px;
+    border-bottom: 3px solid $is-info;
+  }
+
+}
+
+div#password-requirements {
+
+  p.subtitle {
+    margin-bottom: 12px !important;
+  }
+
+  ul#conditions {
+    font-size: 0.95rem;
+    li {
+
+      i {
+        // this isn't working for some reason
+        // margin-right: 5px !important;
+      }
+
+    }
+
+  }
+
 }
