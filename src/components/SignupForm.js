@@ -25,7 +25,7 @@ class SignupForm extends React.Component {
 
   checkUsername(e) {
     // if validation check succeeds, add success notifications to this field
-    // AND keep track of successful check pass in state.
+    // AND keep track of successful check-pass in state.
     /** @todo keep track of validation in state */
 
     // conversely, if check fails, activate failure notification and add
@@ -212,6 +212,7 @@ class SignupForm extends React.Component {
        * Could use a switch case here to tailor
        * more specific messages based on the field
        */
+      console.log({ fieldId });
       p.classList.add('is-danger');
       p.innerText = "This " + fieldId + " is not available";
 
@@ -281,14 +282,20 @@ class SignupForm extends React.Component {
           <div className="card">
 
             <div className="content has-text-centered">
-              <p className="subtitle is-size-3">
+              <p className="subtitle is-size-3 is-marginless">
                 Welcome
+              </p>
+              <p className="subtitle is-size-6 is-marginless">
+                Hit Tab to advance in the form.
+              </p>
+              <p className="subtitle is-size-6">
+                On mobile, Tap on the grey area once the form is completed.
               </p>
             </div>
 
             <div className="card-content">
               
-              <form id="loginForm">
+              <form id="loginForm" autoComplete="off">
                 {/* Username */}
                 <div className="field" id="username-field">
                   <label htmlFor="username" className="label">
