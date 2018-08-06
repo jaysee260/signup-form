@@ -1,31 +1,11 @@
-# webpack-react-boilerplate
+# Sign Up Form
 
-## About
+A React Sign Up Form I started to build just for fun. Will most likely use it later in a project.
 
-A React boilerplate with support for Sass and built with Webpack.
+### Getting Started
 
-## Get Started
-
-1. `git clone`
+1. `git clone https://github.com/jsdev17/signup-form.git`
+1. `cd signup-form`
 1. `npm install`
-
-#### For development
-`npm run dev`
-
-This will use `webpack-dev-server` to serve the React application on `PORT 9000` (to change port, modify `webpack-dev-server` script in `package.json`). As an added note, the development server supports real time updates.
-
-#### For production
-`npm run build`
-
-This will build the React application using production configurations and create a bundle (along with other files) under the `dist` folder in the root directory; if a `dist` folder does not exist webpack will create it.
-
-## Usage
-
-Feel free to browse through the default configurations and to "tune" them to fit the wants or needs of your own project.
-
-Under `build-utils` (build utilities) you will find:
-
-- `common-paths.js`
-- `webpack.common.js`
-- `webpack.dev.js`
-- `webpack.prod.js`
+1. `npm run dev`
+1. navigate to `http://localhost:9000/` in browser
